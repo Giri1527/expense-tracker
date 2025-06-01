@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Expense Tracker (₹)</title>
-</head>
+<head><title>₹ Expense Tracker</title></head>
 <body>
-  <h1>Expense Tracker</h1>
+  <h2>Login/Register</h2>
+  <input id="username" placeholder="Username">
+  <button onclick="register()">Register</button>
+  <button onclick="login()">Login</button>
+
+  <h2>Track Expense</h2>
   <input id="amount" type="number" placeholder="Amount (₹)">
-  <input id="description" type="text" placeholder="Description">
+  <input id="description" placeholder="Description">
   <button onclick="addExpense()">Add Expense</button>
-  <button onclick="loadExpenses()">Load Expenses</button>
+  <button onclick="loadExpenses()">Load My Expenses</button>
+
   <ul id="expenses"></ul>
   <script src="script.js"></script>
 </body>
