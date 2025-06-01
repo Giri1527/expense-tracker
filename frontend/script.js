@@ -50,7 +50,7 @@ function loadExpenses() {
       const ul = document.getElementById("expenses");
       ul.innerHTML = "";
       data.forEach(e => {
-        ul.innerHTML += `<li>${e.description}: ₹${e.amount}</li>`;
+        ul.innerHTML += `<li>${e.description}: Rs. ${e.amount}</li>`;
       });
     });
 }
